@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    
+
+    <h1 style="background-color:rgba(0,0,0,0.3);text-align:center;">Object</h1>
+
+</body>
+
+<script>
+
+    const jmdClass = {
+        name : "Shramwan",
+        age : 30,
+        location : 'jaipur',
+        islsLoggedIn : true,
+        loginDays : ["Monday", "Sunday"]
+    }
+
+    jmdClass.name = "Mahesh"
+    console.log(jmdClass.name);
+
+    Object.freeze(jmdClass); // object freeze not changing this
+    jmdClass.name = "MaheshKumar";
+    console.log(jmdClass.name);
+
+
+    const fbUser = new Object() // signle tern object
+    const instaUser = {} // non-signle tern object
+
+    console.log(fbUser);
+    // console.log(instaUser);
+
+    instaUser.name = "Shrawan";
+    instaUser.id = "123456abc";
+    instaUser.islsLoggedIn = false;
+
+    console.log(instaUser);
+
+
+    // multipul object 
+
+    const regularUser = {
+        email: "abc@exmample.com",
+        fullname : {
+            userfullname:{
+                firstname:"shrawan",
+                lastname:"choudhary"
+            }
+        }
+    }
+
+    console.log(regularUser.fullname.userfullname.firstname);
+
+    // Two object add
+
+    const obj1 = {1:"a", 2:"b"}
+    const obj2 = {3:"c", 4:"d"}
+
+    const obj3 = Object.assign(obj1, obj2)
+    console.log(obj3);
+    
+    const obj4 = {...obj1, ...obj2} // spread object
+    console.log(obj4);
+
+
+
+    
+    
+    
+
+</script>
+
+
+// myArr = ["h", "I"]
+
+</script>
+
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Validation</title>
+  <style>
+    .error {
+      color: red;
+      font-size: 14px;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+<body>
+  <form id="myForm">
+    <label>Name:</label>
+    <input type="text" id="name" placeholder="Enter your name"><br>
+    <div class="validate validate-name"></div>
+    <br>
+
+    <label>Email:</label>
+    <input type="email" id="email" placeholder="Enter your email"><br>
+    <div class="validate validate-email"></div>
+    <br>
+
+    <label>Password:</label>
+    <input type="password" id="password" placeholder="Enter password"><br>
+    <div class="validate validate-password"></div>
+    <br>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <script>
+    const forms = document.getElementById("myForm");
+
+    forms.addEventListener("submit", function(event) {
+      event.preventDefault();
+
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const password = document.getElementById("password").value.trim();
+
+      const nameError = document.querySelector(".validate-name");
+      const emailError = document.querySelector(".validate-email");
+      const passwordError = document.querySelector(".validate-password");
+
+      
+      nameError.textContent = "";
+      emailError.textContent = "";
+      passwordError.textContent = "";
+
+      let isValid = true;  // by-defult shi maan lete h
+
+      if (name === "") {
+        nameError.textContent = "Please enter your name";
+        nameError.classList.add("error");
+        isValid = false;
+      }
+
+      if (email === "") {
+        emailError.textContent = "Please enter your email";
+        emailError.classList.add("error");
+        isValid = false;
+      }
+
+      if (password === "") {
+        passwordError.textContent = "Please enter your password";
+        passwordError.classList.add("error");
+        isValid = false;
+      }
+
+      if (isValid == true) {
+  alert("Form submitted successfully!");
+}
+    });
+  </script>
+</body>
+</html>

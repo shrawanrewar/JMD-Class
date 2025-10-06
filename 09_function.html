@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    
+
+    <h1 style="background-color:rgba(0,0,0,0.3);text-align:center;">Funcation</h1>
+
+</body>
+
+<script>
+// console.log("S");
+// console.log("H");
+// console.log("R");
+// console.log("A");
+// console.log("W");
+// console.log("A");
+// console.log("N");
+
+    function sayMyName() {
+        console.log("S");
+        console.log("H");
+        console.log("R");
+        console.log("A");
+        console.log("W");
+        console.log("A");
+        console.log("N");
+    }
+
+    sayMyName()  ////// function name with perthisc and defention with perthisc , this become exctuins  
+    sayMyName //  this is in refernce no perthisc and this work in react and DOM , this consloe in not working
+
+
+    //////////////////
+
+    function addTwoNumber(number1,number2){
+        console.log(number1+number2);
+        
+    }
+
+    addTwoNumber() ////// this result is NAN
+    addTwoNumber(3,4) ////// this in aarugment
+    addTwoNumber(3,'4') 
+
+    // number1 and number2 ......... this is permatere
+
+
+    /////////////////
+
+    function addThreeNumber(number1,number2){
+        let result = number1 + number2
+        return result
+        console.log("shrawan"); // js rules according after return data not wotking
+
+        /// latest way 
+        // return number1+number2
+        
+    }
+
+    const resultOne = addThreeNumber(7,2)
+    console.log("Result:", resultOne);
+
+
+    /////////////////
+
+    function loginUserMessage(username){
+        return `${username} just logged In`
+    }
+
+    //loginUserMessage("Shrawan")
+    console.log(loginUserMessage("Shrawan"));
+    console.log(loginUserMessage()); // this condition in get undefined
+
+
+    /// like ecomeerce
+
+    // function calculateCartPrice(num1){
+    //     return num1
+    // }
+
+    // console.log(calculateCartPrice(200, 400, 600));
+    
+    function calculateCartPrice(...num1){  ////// reset operter according use cases
+        return num1
+    }
+
+    console.log(calculateCartPrice(200, 400, 600));
+
+
+    //////// with object
+
+    const user = {
+        username: "Shrawan",
+        price: 199
+    }
+
+    function handleObject(anyobject){
+        console.log(`username is ${anyobject.username} and prices is ${anyobject.price}`);
+        
+    }
+
+    handleObject(user)
+
+
+    /// with array
+
+    const myNewArry = [200,400,100,600];
+
+    function returnsecondValue(getArry){
+        return getArry[1,2]
+    }
+
+    console.log(returnsecondValue(myNewArry));
+
+    // console.log("shrawan-gthdfh adn");
+    // console.log("asdcf");
+    
+     
+
+    
+
+
+</script>
+
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    
+
+    <h1 style="background-color:rgba(0,0,0,0.3);text-align:center;">Array</h1>
+
+</body>
+
+<script>
+
+// Array JavaScript ka ek built-in object (data structure) hai jo ek hi variable me multiple values store karne ke liye use hota hai.
+
+// Simple shabdon me: Array ek list jaisa hota hai jisme aap numbers, strings, objects ya even dusre arrays bhi store kar sakte ho.
+
+//  Array Method
+
+const myArr = [0, 1, 2, 3, 4, 5];
+
+
+// Push
+// myArr.push(6)     // a new data add on array last indexing
+// console.log(myArr);
+
+// Pop
+// myArr.pop()     ///// no arrugment this method , this is automatiocly delete on last indexing number
+// console.log(myArr);
+
+//unshift
+// myArr.unshift(9)      ///// value add on array first indexing and this use on machine load and change all array indexing
+// console.log(myArr);
+
+// Shift
+
+// myArr.shift()             ///// this in no arrugment passed and this remove on first array number
+// console.log(myArr);
+
+// console.log(myArr.includes(9))      /// check data type in boolean like question yes or No
+
+// const myArrNew = [0, 1, 7, 3, 4, 5];
+
+// console.log(myArrNew.indexOf(7))    /// check array index number
+
+// const newArr = myArr.join()
+// console.log(newArr);
+// console.log(myArr);
+
+// console.log(typeof newArr); /// this is change on type on array and convert to bind
+
+
+
+// ********* slice, splice
+
+console.log("A ", myArr)
+
+const myn1 = myArr.slice(1,3) // start one index to last 3 leave meanse this in last range not inquild
+console.log(myn1);
+console.log("B ", myArr)
+
+
+const myn2 = myArr.splice(1,3) // start one index to last 3 and this is change original array
+console.log(myn2);
+console.log("C ", myArr)
+
+// *********** concat
+
+const teachers = ["Shrawan", "Akash", "Ghanshyam"];
+const student = ["Vinod", "Anil", "Vijay"]
+
+// const jmd = teachers.concat(student)
+// console.log(jmd);
+
+// ******* Spread 
+
+const newjmd = [...teachers, ...student]
+console.log(newjmd);
+
+/////////// map
+
+
+
+
+
+
+
+// const double = (num) => {
+//   return num * 2;
+// };
+
+// const abc = double(1)
+// console.log(abc);
+
+// const doublee = num => num*2
+// console.log(doublee(5));
+
+
+// const numbers = [1, 2, 3, 4];
+
+// const doubled = numbers.map(num => num * 2);
+
+// console.log(doubled); 
+// console.log(numbers);  
+
+// const double = (num) =>{
+    
+// }
+
+
+
+</script>
+
+</html>

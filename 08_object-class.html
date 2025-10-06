@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    
+
+    <h1 style="background-color:rgba(0,0,0,0.3);text-align:center;">Object</h1>
+
+</body>
+
+<script>
+
+    // Non-turn Object
+    const user = {
+        name : "Shrawan",
+        age : 30,
+        email : "abc@gmmail.com",
+        contact : 8875840275
+    }
+
+    // turn object
+    const userOne = new Object()
+    userOne.name = "Shrawan",
+    userOne.age = 30,
+
+
+    // console.log(user.name);
+    Object.freeze(user)  // object freeze
+    user.name = "Mahesh"
+    // console.log(user.name);
+
+    const jmdStudy = {
+        dirctor : "Akash",
+        student : {
+            studentname : {
+                firststudent : "Sandip",
+                secondstudent : "Rahul"
+            }
+        },
+        teacher : {
+            fisttecher : "Ghanshyam ji",
+            secondteahcer : "shrawan"
+        }
+    }
+
+    console.log(jmdStudy.teacher.secondteahcer);
+    
+
+// Object assign   
+
+const objOne = {a:1,b:2,c:3}
+const objTwo = {d:4,e:2,f:6}
+const objFive = {g:7,h:8,I:9}
+
+// const objThree = Object.assign(objOne,objTwo)
+// console.log(objThree);
+
+// object spread
+
+const objeFour = {...objOne,...objTwo,...objFive}
+console.log(objeFour);
+
+    
+
+    
+
+    
+
+</script>
+
+
+
+</html>
